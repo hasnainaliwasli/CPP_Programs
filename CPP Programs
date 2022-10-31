@@ -1,0 +1,532 @@
+
+//  1 .Write program to print Text,Character,Integer and Floating Values.
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	cout<<"Text : My name is Hasnain Ali"<<endl<<"Integer Values: 1,2,3,4,5,6,7,8,9"<<endl
+	<<"Special Characters: !@#$%^&*()"<<endl<<"Floating Point Values: 1.2,1.3,1.4,1.5,1.6,1.7"<<endl;
+}
+
+// 2.Input radius and calculate Area=4(PI)(R^2)  and Circumference= 4/3(PI)(R^3) where PI=3.14
+
+#include <iostream>
+#include<conio.h>
+#define PI 3.14
+using namespace std;
+int main(){
+int R,A,C;
+
+	cout<<"Enter the Radius: ";
+	cin>>R;
+	A = 4*PI*R*R;
+	C = 4/3*PI*R*R*R;
+	cout<<"Area = "<<A<<endl;
+	cout<<"Circumference = "<<C<<endl;
+}
+
+
+//  3. Get 3 sides a,b,c of Triangle.Find Area=SQRT(s(s-a)(s-b)(s-c) where s=(a+b+c)/2
+
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+int main()
+{
+	float a,b,c,s,Area;
+	cout<<"Enter 1st side : ";
+	cin>>a;
+	cout<<"Enter 2nd side : ";
+	cin>>b;
+	cout<<"Enter 3rd side : ";
+	cin>>c;
+	s= (a+b+c)/2;
+	Area = sqrt(s*(s-a)*(s-b)*(s-c));
+	cout<<"Area = "<<setprecision(3)<<Area<<endl;	
+}
+
+
+
+//   4.Input miles and print Kilometers  where  1 Mile = 1.609 KM  .
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{float miles,KM;
+	cout<<"Enter the Miles: ";
+	cin>>miles;
+	KM = 1.609 * miles;
+	cout<<"Kilometers =  "<<KM;	
+}
+
+// 5. Input 4 numbers and print Sum,Product and Average.
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	float a,b,c,d,product,sum,average;
+	cout<<"Enter the 1st Number: ";
+	cin>>a;
+	cout<<"Enter the 2nd Number: ";
+	cin>>b;
+	cout<<"Enter the 3rd Number: ";
+	cin>>c;
+	sum = a+b+c;
+	product = a*b*c;
+	average = sum/4;
+	cout<<"Sum = "<<sum<<endl;
+	cout<<"Product = "<<product<<endl;
+	cout<<"Average = "<<average<<endl;	
+}
+
+
+
+
+//  6. Input age in Years and display in months and days.
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	float years,months;
+	int days;
+	cout<<"Enter your age in Years: ";
+	cin>>years;
+	months = years * 12;
+	days = years*365;
+	cout<<"Age in Months: "<<months<<endl;
+	cout<<"Age in Days: "<<days<<endl;
+}
+
+
+
+//  7.input a Number and display Square and Cube.
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	float n,square,cube;
+	cout<<"Enter a Number: ";
+	cin>>n;
+	square = n*n;
+	cube = n*n*n;
+	cout<<"Square is : "<<square<<endl;
+	cout<<"Cube is : "<<cube<<endl;	
+}
+
+
+
+//   8. Input total pages of book,Person read in one day,Number of days read and Display How many pages read and how many remaining.
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int pages,reads,days,readed,remaining;
+	cout<<"Enter the total Pages of Book:  ";
+	cin>>pages;
+	cout<<"How many pages a Person read in a Day: ";
+	cin>>reads;
+	cout<<"How many Days he reads: ";
+	cin>>days;
+	readed = reads * days;
+	remaining = pages - readed;
+	if(readed > pages){
+	cout<<"The Book is finished,He can read "<< readed <<" Pages in "<< days <<" days";
+	}
+	else
+	{	
+	cout<<"Pages Readed: "<<readed<<endl<<"Remaining Pages are : "<<remaining;
+}	
+}
+
+
+//   9. Car can Travel 5.3 miles in 1 litter. Input petrol and tell distance.
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	float P,D;
+	cout<<"Enter the Petrol in liters: ";
+	cin>>P;
+	
+	D = P * 5.3;
+	cout<<"Car will Cover "<<D<<" Miles in "<<P<<" Liter Petrol";	
+}
+
+
+//  10. Input total number of students and fee per student .Display total collected fee.
+
+
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{int n;
+	cout<<"Enter number of students: ";
+	cin>>n;
+	int Fee[n];
+	int sum = 0;
+	for (int i=0;i<n;i++){	
+		cout<<"Enter "<<i+1<<" Student Fee: ";
+		cin>>Fee[i];
+		sum = sum + Fee[i];
+	}
+	cout<<"Total fees collected from class is : "<<sum;
+}
+
+
+// 11.Convert Fahrenheit to Celsius  where  C=5/9(F-32)
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{float F,C;
+	cout<<"Enter the temperature in Fahrenheit: ";
+	cin>>F; 
+	C=(F - 32.0) * 5.0 / 9.0;
+	cout<<"Temperature in Celsius is: "<<C;
+}
+
+
+
+//   12. Enter 3 digits and display them line by line.
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int a,b,c;
+	cout<<"Enter 1st Number: ";
+	cin>>a;
+	cout<<"Enter 2nd Number: ";
+	cin>>b;
+	cout<<"Enter 3rd Number: ";
+	cin>>c;
+	cout<<"Your Result"<<endl;
+	cout<<a<<endl<<b<<endl<<c<<endl;	
+}
+
+
+
+/*    13.Show output in one cout:
+       1     2     3      4     5
+      6     7     8      9     10*/
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	cout<<"1 \t 2 \t 3 \t 4 \t 5 \n6 \t 7 \t 8 \t 9 \t 10";	
+}
+
+
+//    14.Calculate Volume of Cube where   V = length * width * height
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	
+	int l,h,w,V;
+	cout<<"Enter Length: ";
+	cin>>l;
+	cout<<"Enter Width: ";
+	cin>>w;
+	cout<<"Enter Height: ";
+	cin>>h;
+	V = h*l*h;
+	cout<<"Volume = "<<V;
+}
+
+
+
+//   15.Input x and y coordinates and calculate Distance=SQRT((x2 - x1)^2 + (y2 -y1)^2)
+
+
+
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+int main()
+{
+	int x1,x2,y1,y2;
+	float D;	
+	cout<<"Enter x1 coordinate : ";
+	cin>>x1;
+	cout<<"Enter x2 coordinate : ";
+	cin>>x2;
+	cout<<"Enter y1 coordinate : ";
+	cin>>y1;
+	cout<<"Enter y2 coordinate : ";
+	cin>>y2;
+	int a = (x2-x1);
+	int b = (y2-y1);
+	D = sqrt (a*a+b*b);
+	cout<<"Distance= "<<setprecision(4)<<D;
+}
+
+
+
+//   16.Swap values of three variables using 4th variable.
+
+
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int a,b,c,temp;
+	cout<<"Enter a variable: ";
+	cin>>a;
+	cout<<"Enter b variable: ";
+	cin>>b;
+	cout<<"Enter c variable: ";
+	cin>>c;
+	temp=a;
+	a=b;
+	b=c;
+	c=temp;
+	cout<<"values after Swapping a,b and c Variable"<<endl;
+	cout<<"a= "<<a<<endl<<"b= "<<b<<endl<<"c= "<<c;	
+}
+
+
+//   17.Input radius and angle  Calculate Length= radius * angle;
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int l,r,a;
+	cout<<"Enter radius: ";
+	cin>>r;
+	cout<<"Enter angle: ";
+	cin>>a;
+	l = a*r;
+	cout<<"Length = "<<l;	
+}
+
+
+//   18.Input pounds and convert to Kg.
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+float po,kg;
+cout <<"Enter the amount of Pound: ";
+cin>>po;
+     kg = po * 0.453592;
+     cout<<po<<" Pound = "<<kg<<" Kg";	  
+}
+
+
+//    19. find area vof a sector of circle in radians angle    Area = 1/2 × r^2(theta)
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int theta,r,Area;
+	cout<<"Enter the radius: ";
+	cin>>r;
+	cout<<"Enter the angle: ";
+	cin>>theta;
+	Area = r*r*theta /2;
+	cout<<"Area of a sector of a circle= "<<Area;	
+}
+
+
+
+//   20.  +ve number to base 2.
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int a=1025;
+	int c = a%15;
+	int d = 1025/15;
+	cout<<c<<endl;
+	cout<<d;
+}
+
+    // 21.Input letter and Display next two.
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	char ch;
+    cout<<"Enter a character : ";
+    cin>>ch;
+    cout<<"Next two characters : ";
+    ch++;
+    cout<<ch<<"\t , ";
+    ch++;
+    cout<<ch<<"\t";
+}
+
+
+
+//    22.input 5 digits and display Sum.
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int a,b,c,d,e,sum;
+	cout<<"Enter 1st digit: ";
+	cin>>a;
+	cout<<"Enter 2nd digit: ";
+	cin>>b;
+	cout<<"Enter 3rd digit: ";
+	cin>>c;
+	cout<<"Enter 4th digit: ";
+	cin>>d;	
+	cout<<"Enter 5th digit: ";
+	cin>>e;	
+	sum = a+b+c+d+e;	
+	cout<<"Sum = "<<sum;	
+}
+
+
+
+/*    23.input Basic Salary  calculate 35% dearness allowence, 25% house rent displaty gross
+salary.Gross salary = Basic salary + HRA (House rent allowance) + DA (dearness allowance) */
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int BS,DA,HR,GS;
+	cout<<"Enter Basic salary: ";
+	cin>>BS;
+	DA = BS * 35 /100;
+	HR = BS * 25 / 100;
+	GS = BS + DA + HR;
+	cout<<"Gross Salary = "<<GS;
+}
+
+
+//    24.Input two times in hh:mm:ss and add them and display total time.
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+int hh1, hh2, mm1, mm2, ss1, ss2, hh=0, mm=0, ss=0;
+    cout<<"Enter time 1 in hh:mm:ss format : ";
+    cin>>hh1>>mm1>>ss1;  
+    cout<<"Enter time 2 in hh:mm:ss format : ";
+    cin>>hh2>>mm2>>ss2;
+    ss = ss1 + ss2;
+    mm = ss / 60;
+    ss = ss % 60;
+    mm = mm + (mm1 + mm2);
+    hh = mm / 60;
+    mm = mm % 60;
+    hh = hh + (hh1 + hh2);
+    cout<<"Sum of two times is : "<<hh<<":"<<mm<<":"<<ss<<endl;	
+}
+
+
+
+//    25.   Input principal, rate, time and Display Compound Interest.
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+using namespace std;
+int main()
+{
+    float principal, rate, time, result;
+    cout << "Enter principal : ";
+    cin >> principal;
+    cout << "Enter rate : ";
+    cin >> rate;
+    cout <<"Enter time (year) : ";
+    cin >> time;
+    result = principal * pow((1 + rate / 100), time);
+    cout << endl << "Compound interest : " << result;	
+}
+
+
+//    26.Enter Character and display ASCII Value
+#include<iostream>
+#include <conio.h>
+using namespace std;
+int main ()
+{
+    char c;
+    cout << "Enter a character : ";
+    cin >> c;
+    cout << "ASCII value of " << c <<" is :  " << (int)c;
+    return 0;
+}
+
+
+
+//   27. Display Some sequence.
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+	int n1=1,n2=2,n3=3,n4=4,n5=5;
+	
+	cout<<"Number \tSquare \tCube" <<endl<<n1<<"\t"<<n1<<"\t"<<n1<<endl<<n2<<"\t"
+	<<n2*n2<<"\t"<<n2*n2*n2<<endl<<n3<<"\t"<<n3*n3<<"\t"<<n3*n3*n3<<endl
+	<<n4<<"\t"<<n4*n4<<"\t"<<n4*n4*n4<<endl<<n5<<"\t"<<n5*n5<<"\t"<<n5*n5*n5<<endl;	
+	
+}
+
+
+
+//   28.Input 5 subject's Marks and Display total sum and Percentage.
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int a,b,c,d,e,Obt,perc;
+	cout<<"Enter Marks in Computer Science out of 100: ";
+	cin>>a;
+	cout<<"Enter Marks in Mathematics out of 100: ";
+	cin>>b;
+	cout<<"Enter Marks in Physics out of 100: ";
+	cin>>c;
+	cout<<"Enter Marks in English out of 100: ";
+	cin>>d;
+	cout<<"Enter Marks in Urdu out of 100: ";
+	cin>>e;
+	Obt = a+b+c+d+e;
+	perc = Obt*100/500 ;
+	cout<<"Total Marks= "<<Obt<<endl;
+	cout<<"Total Percentage= "<<perc;	
+}
+
+
+
+
+
+
+
+
+
