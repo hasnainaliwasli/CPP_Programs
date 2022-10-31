@@ -1,0 +1,18 @@
+//   12. Enter 3 digits and display them line by line.
+
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int a,b,c;
+	cout<<"Enter 1st Number: ";
+	cin>>a;
+	cout<<"Enter 2nd Number: ";
+	cin>>b;
+	cout<<"Enter 3rd Number: ";
+	cin>>c;
+	cout<<"Your Result"<<endl;
+	cout<<a<<endl<<b<<endl<<c<<endl;	
+}
