@@ -1,0 +1,21 @@
+// 5. Input 4 numbers and print Sum,Product and Average.
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	float a,b,c,d,product,sum,average;
+	cout<<"Enter the 1st Number: ";
+	cin>>a;
+	cout<<"Enter the 2nd Number: ";
+	cin>>b;
+	cout<<"Enter the 3rd Number: ";
+	cin>>c;
+	sum = a+b+c;
+	product = a*b*c;
+	average = sum/4;
+	cout<<"Sum = "<<sum<<endl;
+	cout<<"Product = "<<product<<endl;
+	cout<<"Average = "<<average<<endl;	
+}
