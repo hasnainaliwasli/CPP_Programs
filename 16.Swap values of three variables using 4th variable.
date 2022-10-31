@@ -1,0 +1,22 @@
+//   16.Swap values of three variables using 4th variable.
+
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int a,b,c,temp;
+	cout<<"Enter a variable: ";
+	cin>>a;
+	cout<<"Enter b variable: ";
+              cin>>b;
+	cout<<"Enter c variable: ";
+	cin>>c;
+	temp=a;
+	a=b;
+	b=c;
+	c=temp;
+	cout<<"values after Swapping a,b and c Variable"<<endl;
+	cout<<"a= "<<a<<endl<<"b= "<<b<<endl<<"c= "<<c;	
+}
