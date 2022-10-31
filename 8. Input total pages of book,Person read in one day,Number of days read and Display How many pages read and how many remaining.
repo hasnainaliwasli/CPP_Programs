@@ -1,0 +1,25 @@
+/*   8. Input total pages of book,Person read in one day,Number of days read and Display How many pages read and how many remaining.*/
+
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int pages,reads,days,readed,remaining;
+	cout<<"Enter the total Pages of Book:  ";
+	cin>>pages;
+	cout<<"How many pages a Person read in a Day: ";
+	cin>>reads;
+	cout<<"How many Days he reads: ";
+	cin>>days;
+	readed = reads * days;
+	remaining = pages - readed;
+	if(readed > pages){
+	cout<<"The Book is finished,He can read "<< readed <<" Pages in "<< days <<" days";
+	}
+	else
+	{	
+	cout<<"Pages Readed: "<<readed<<endl<<"Remaining Pages are : "<<remaining;
+}	
+}
