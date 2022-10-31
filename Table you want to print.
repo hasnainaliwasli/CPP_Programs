@@ -1,0 +1,21 @@
+//  Table you want to print.
+
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main(){
+	
+	int table,terms;
+	
+	cout<<"Enter the number of table you want to print: ";
+	cin>>table;
+	
+	cout<<"How much terms you want to calculate: ";
+	cin>>terms;
+	
+	for(int i=1 ; i<=terms ; i++){
+		 
+		cout<<i<<"*"<<table<<"="<<i*table<<endl;
+	}
+}
