@@ -1,0 +1,12 @@
+//   4.Input miles and print Kilometers  where  1 Mile = 1.609 KM  .
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{float miles,KM;
+	cout<<"Enter the Miles: ";
+	cin>>miles;
+	KM = 1.609 * miles;
+	cout<<"Kilometers =  "<<KM;	
+}
