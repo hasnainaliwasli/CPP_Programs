@@ -1,0 +1,19 @@
+//  10. Input total number of students and fee per student .Display total collected fee.
+
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{int n;
+	cout<<"Enter number of students: ";
+	cin>>n;
+	int Fee[n];
+	int sum = 0;
+	for (int i=0;i<n;i++){	
+		cout<<"Enter "<<i+1<<" Student Fee: ";
+		cin>>Fee[i];
+		sum = sum + Fee[i];
+	}
+	cout<<"Total fees collected from class is : "<<sum;
+}
