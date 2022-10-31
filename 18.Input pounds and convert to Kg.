@@ -1,0 +1,15 @@
+//   18.Input pounds and convert to Kg.
+
+
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+float po,kg;
+cout <<"Enter the amount of Pound: ";
+cin>>po;
+     kg = po * 0.453592;
+     cout<<po<<" Pound = "<<kg<<" Kg";	  
+}
