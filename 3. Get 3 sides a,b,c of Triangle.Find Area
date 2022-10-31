@@ -1,0 +1,21 @@
+//  3. Get 3 sides a,b,c of Triangle.Find Area=SQRT(s(s-a)(s-b)(s-c), s=(a+b+c)/2
+
+
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+int main()
+{
+	float a,b,c,s,Area;
+	cout<<"Enter 1st side : ";
+	cin>>a;
+	cout<<"Enter 2nd side : ";
+	cin>>b;
+	cout<<"Enter 3rd side : ";
+	cin>>c;
+	s= (a+b+c)/2;
+	Area = sqrt(s*(s-a)*(s-b)*(s-c));
+	cout<<"Area = "<<setprecision(3)<<Area<<endl;	
+}
