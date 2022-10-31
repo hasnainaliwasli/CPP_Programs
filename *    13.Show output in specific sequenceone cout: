@@ -1,0 +1,14 @@
+//*    13.Show output in one cout:
+       1     2     3      4     5
+      6     7     8      9     10*/
+      
+      
+      
+      #include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	cout<<"1 \t 2 \t 3 \t 4 \t 5 \n6 \t 7 \t 8 \t 9 \t 10";	
+}
+
