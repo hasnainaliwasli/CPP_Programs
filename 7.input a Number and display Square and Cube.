@@ -1,0 +1,17 @@
+//  7.input a Number and display Square and Cube.
+
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	float n,square,cube;
+	cout<<"Enter a Number: ";
+	cin>>n;
+	square = n*n;
+	cube = n*n*n;
+	cout<<"Square is : "<<square<<endl;
+	cout<<"Cube is : "<<cube<<endl;	
+}
+
