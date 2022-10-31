@@ -1,0 +1,8 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	cout<<"Text : My name is Hasnain Ali"<<endl<<"Integer Values: 1,2,3,4,5,6,7,8,9"<<endl
+	<<"Special Characters: !@#$%^&*()"<<endl<<"Floating Point Values: 1.2,1.3,1.4,1.5,1.6,1.7"<<endl;
+}
