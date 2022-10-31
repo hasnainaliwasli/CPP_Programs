@@ -1,0 +1,23 @@
+//   28.Input 5 subject's Marks and Display total sum and Percentage.
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int a,b,c,d,e,Obt,perc;
+	cout<<"Enter Marks in Computer Science out of 100: ";
+	cin>>a;
+	cout<<"Enter Marks in Mathematics out of 100: ";
+	cin>>b;
+	cout<<"Enter Marks in Physics out of 100: ";
+	cin>>c;
+	cout<<"Enter Marks in English out of 100: ";
+	cin>>d;
+	cout<<"Enter Marks in Urdu out of 100: ";
+	cin>>e;
+	Obt = a+b+c+d+e;
+	perc = Obt*100/500 ;
+	cout<<"Total Marks= "<<Obt<<endl;
+	cout<<"Total Percentage= "<<perc;	
+}
