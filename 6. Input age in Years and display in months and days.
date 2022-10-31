@@ -1,0 +1,17 @@
+//  6. Input age in Years and display in months and days.
+
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	float years,months;
+	int days;
+	cout<<"Enter your age in Years: ";
+	cin>>years;
+	months = years * 12;
+	days = years*365;
+	cout<<"Age in Months: "<<months<<endl;
+	cout<<"Age in Days: "<<days<<endl;
+}
