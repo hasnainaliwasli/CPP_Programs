@@ -1,0 +1,17 @@
+//    19. find area of a sector of circle in radians angle  Where  Area = 1/2 × r^2(theta)
+
+
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int theta,r,Area;
+	cout<<"Enter the radius: ";
+	cin>>r;
+	cout<<"Enter the angle: ";
+	cin>>theta;
+	Area = r*r*theta /2;
+	cout<<"Area of a sector of a circle= "<<Area;	
+}
