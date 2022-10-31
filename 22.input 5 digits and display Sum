@@ -1,0 +1,22 @@
+//    22.input 5 digits and display Sum
+
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int a,b,c,d,e,sum;
+	cout<<"Enter 1st digit: ";
+	cin>>a;
+	cout<<"Enter 2nd digit: ";
+	cin>>b;
+	cout<<"Enter 3rd digit: ";
+	cin>>c;
+	cout<<"Enter 4th digit: ";
+	cin>>d;	
+	cout<<"Enter 5th digit: ";
+	cin>>e;	
+	sum = a+b+c+d+e;	
+	cout<<"Sum = "<<sum;	
+}
