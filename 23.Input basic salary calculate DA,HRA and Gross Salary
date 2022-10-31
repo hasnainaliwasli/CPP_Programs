@@ -1,0 +1,17 @@
+/*    23.input Basic Salary  calculate 35% dearness allowence, 25% house rent displaty gross
+salary.Gross salary = Basic salary + HRA (House rent allowance) + DA (dearness allowance) */
+
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int BS,DA,HR,GS;
+	cout<<"Enter Basic salary: ";
+	cin>>BS;
+	DA = BS * 35 /100;
+	HR = BS * 25 / 100;
+	GS = BS + DA + HR;
+	cout<<"Gross Salary = "<<GS;
+}
