@@ -1,0 +1,17 @@
+//Area=4(PI)(R^2)  and Circumference= 4/3(PI)(R^3) where PI=3.14
+
+
+
+#include <iostream>
+#include<conio.h>
+#define PI 3.14
+using namespace std;
+int main(){
+int R,A,C;
+	cout<<"Enter the Radius: ";
+	cin>>R;
+	A = 4*PI*R*R;
+	C = 4/3*PI*R*R*R;
+	cout<<"Area = "<<A<<endl;
+	cout<<"Circumference = "<<C<<endl;
+}
