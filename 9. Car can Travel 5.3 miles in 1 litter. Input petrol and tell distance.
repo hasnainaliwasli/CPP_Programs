@@ -1,0 +1,15 @@
+//   9. Car can Travel 5.3 miles in 1 litter. Input petrol and tell distance.
+
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	float P,D;
+	cout<<"Enter the Petrol in liters: ";
+	cin>>P;
+	
+	D = P * 5.3;
+	cout<<"Car will Cover "<<D<<" Miles in "<<P<<" Liter Petrol";	
+}
