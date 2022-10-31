@@ -1,0 +1,16 @@
+//   17.Input radius and angle  Calculate Length= radius * angle;
+
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int l,r,a;
+	cout<<"Enter radius: ";
+	cin>>r;
+	cout<<"Enter angle: ";
+	cin>>a;
+	l = a*r;
+	cout<<"Length = "<<l;	
+}
